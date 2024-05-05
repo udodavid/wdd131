@@ -9,7 +9,6 @@
 	}
     .navigation a {
 		display: block;
-		flex: 1 1 100%;
 	}
 
     main {
@@ -37,9 +36,5 @@
         max-width: 400px;
         height: auto;
         
-    }
-
-    main figcaption {
-        text-align: center;
     }
 }
