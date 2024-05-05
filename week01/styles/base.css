@@ -1,0 +1,128 @@
+body {
+    max-width: 840px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+    padding: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: overline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 0px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card header {
+    background-color: #333; /* Change the color as per your preference */
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+
+}
+
+.card p {
+    margin-left: 10px;
+    text-align: justify;
+}
+
+.profile {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
+    margin-right: 10px;
+}
+
+.flag {
+    width: 150px;
+    height: 110px;
+    border: 1px solid green;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: left;
+    margin: 0 0 1rem 1rem;
+    margin-right: 10px;
+}
+
+.subsection h3 {
+    position: relative;
+    text-align: center;
+}
+
+.subsection2 {
+    margin-top: 100px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.subsection2 ul li a {
+    text-decoration: none;
+    color: steelblue;
+    list-style: none;
+    padding: 1rem;
+}
+
+.subsection2 ul li a:hover {
+    text-decoration: underline;
+}

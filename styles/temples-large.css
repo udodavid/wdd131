@@ -1,0 +1,45 @@
+/*Larger View Css*/
+@media (min-width: 37.5em) {
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+    .navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+    main {
+        max-width: 1200px; /* Adjust max-width as needed */
+        justify-content: center;    
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    main .temple-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px; 
+        justify-content: center;
+    }
+
+    main figure {
+        margin: 0;
+        padding: 0;
+    }
+    
+    main .temple-grid img {
+        max-width: 400px;
+        height: auto;
+        
+    }
+
+    main figcaption {
+        text-align: center;
+    }
+}
