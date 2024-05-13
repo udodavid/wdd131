@@ -11,35 +11,81 @@
 
 </head>
 <body>
-    <!-- Hero Image Section -->
-    <section class="hero">
-        <!-- Use srcset for responsive images -->
-        <img srcset="hero-mobile.webp 500w, hero-desktop.webp 1200w" alt="Hero Image">
-    </section>
+    <header>
+        <h1>LAGOS</h1>
+    </header>
+    <main>
+        <!-- Hero Image Section -->
+        <section class="hero">
+            <picture>
+                <!-- WebP image for desktop -->
+                <source srcset="images/lagos-large.webp" media="(min-width: 1000px)"">
+                <!-- WebP image for mobile -->
+                <source srcset="images/lagos-medium.webp" media="(min-width: 500px)">
+                <!-- Fallback image for browsers that do not support WebP -->
+                <img src="images/lagos-small.webp" alt="LAGOS" width="500" height="700">
+            </picture>
+        </section>
 
-    <!-- Content Section -->
-    <section class="content">
-        <h1>Place Name</h1>
-        <!-- Other content goes here -->
-    </section>
 
-    <!-- Weather Section -->
-    <section class="weather">
-        <h2>Weather</h2>
-        <div class="weather-icon">
-            <!-- SVG icon for mobile view -->
-            <img src="weather-icon.svg" alt="Weather Icon">
-        </div>
-        <!-- Weather details -->
-        <p>Temperature: 25°C</p>
-        <p>Wind Speed: 10 km/h</p>
-        <p>Windchill: <span id="windchill">N/A</span></p>
-    </section>
+        <!-- Weather Section -->
+        <section class="weather">
+            <section class="weather-head">
+                <h2>Weather</h2> 
+                <span><img src="images/weather-icon.svg" alt="Weather Icon"></span>
+                <!-- Weather details -->
+            </section>
+            <div class="weather-list">
+                <div class="first">
+                    <p>Temperature:</p>
+                    <p>Conditions:</p>
+                    <p>Wind:</p>
+                    <p>Windchill:</p>
+                </div>
+                <div class="second">
+                    <p>25°C</p>
+                    <p>Partly Cloudy</p>
+                    <p>10km/h</p>
+                    <span id="windchill">N/A</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="data">
+            <section class="data-head">
+                <h2>Data</h2> 
+                <span><img src="images/weather-icon.svg" alt="Weather Icon"></span>
+                <!-- Weather details -->
+            </section>
+            <div class="weather-list">
+                <div class="first">
+                    <p>Area: </p>
+                    <p>Population: </p>
+                    <p>Capital: </p>
+                    <p>Languages: </p>
+                    <p>Currency: </p>
+                    <p>Time Zone: </p>
+                    <p>Calling Code: </p>
+                    <p>Internet TLD: </p>
+                </div>
+                <div class="second">
+                    <p>923,769 sq km</p>
+                    <p>230,000,000</p>
+                    <p>Abuja</p>
+                    <p>English</p>
+                    <p>Naira(₦)</p>
+                    <p>UTC+01:00 (WAT)</p>
+                    <p>+234</p>
+                    <p>ng</p>
+                </div>        
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer>
         <!-- Include the current year and last modified date using JavaScript -->
-        <p>&copy; <span id="currentYear"></span> Place Name. Last modified: <span id="lastModified"></span></p>
+        <p>&copy; <span id="currentYear"></span> LAGOS. Last modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>

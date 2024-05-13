@@ -1,8 +1,5 @@
 // Function to calculate windchill
 function calculateWindChill(temperature, windSpeed) {
-    // Check if temperature is in Celsius or Fahrenheit
-    // Formula for wind chill calculation depends on the units used
-    // In this static example, we're assuming Celsius
     if (temperature <= 10 && windSpeed > 4.8) {
         return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
     } else {
