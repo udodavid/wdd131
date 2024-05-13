@@ -17,7 +17,8 @@ window.addEventListener('load', function () {
 });
 
 // Display current year and last modified date in the footer
-const currentYear = new Date().getFullYear();
-const lastModified = document.lastModified;
-document.getElementById('currentYear').textContent = currentYear;
-document.getElementById('lastModified').textContent = lastModified;
+// Get the current year and update the footer
+document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+// Get the last modified date of the document and update the footer
+document.getElementById('lastModification').textContent = "Last Modification: " + document.lastModified;
