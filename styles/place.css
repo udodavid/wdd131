@@ -1,0 +1,42 @@
+/* Global styles */
+:root {
+    --primary-color: #007bff; /* Adjust according to the country/place */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero section styles */
+.hero img {
+    width: 100%;
+}
+
+/* Content section styles */
+.content {
+    padding: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+/* Weather section styles */
+.weather {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.weather-icon {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

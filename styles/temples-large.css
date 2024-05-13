@@ -1,5 +1,16 @@
+.img{
+    max-width: 320px;
+    margin-bottom: 8px;
+}
+.figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
 /*Larger View Css*/
-@media (min-width: 37.5em) {
+@media (min-width: 900px) {
     #menu {
 		display: none; /* hide hamburger button */
 	}
@@ -38,3 +49,17 @@
         
     }
 }
+@media (min-width:750px) {
+    .img{
+        max-width: 220px;
+        margin-bottom: 8px;
+    }
+    main .temple-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px; 
+        justify-content: center;
+    }
+}
+
