@@ -1,7 +1,12 @@
 // Function to calculate windchill
-function calculateWindChill(temperature, windSpeed) {
-    if (temperature <= 10 && windSpeed > 4.8) {
-        return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
+function calculateWindChill(temperature, windSpeed, units) {
+    // Check if conditions are met for wind chill calculation
+    if ((units === "metric" && temperature <= 10 && windSpeed > 4.8) ||
+        (units === "imperial" && temperature <= 50 && windSpeed > 3)) {
+        // Calculate windchill
+        return units === "metric" ?
+            ((13.12 + (0.6215 * temperature) - (11.37 * Math.pow(windSpeed, 0.16)) + (0.3965 * temperature * Math.pow(windSpeed, 0.16)))).toFixed(2) + "°C" :
+            ((35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temperature * Math.pow(windSpeed, 0.16)))).toFixed(2) + "°F";
     } else {
         return "N/A";
     }
@@ -9,14 +14,14 @@ function calculateWindChill(temperature, windSpeed) {
 
 // Display windchill on page load
 window.addEventListener('load', function () {
-    const temperature = 25; // Static temperature value for example
-    const windSpeed = 10; // Static wind speed value for example
-    const windchill = document.getElementById('windchill');
-    const result = calculateWindChill(temperature, windSpeed);
-    windchill.textContent = result + "°C"; // Display windchill on the page
+    const temperature = 25; 
+    const windSpeed = 10; 
+    const units = "metric";
+    const windchillElement = document.getElementById('windchill');
+    const windchill = calculateWindChill(temperature, windSpeed, units);
+    windchillElement.textContent = windchill;
 });
 
-// Display current year and last modified date in the footer
 // Get the current year and update the footer
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 
