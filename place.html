@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name: description content="Week03">
-    <meta name="author" content="UDO DAVID">
     <title>LAGOS</title>
+    <meta name="author" content="UDO DAVID">
+    <meta name="description" content="Country Page | WDD131">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,20 +18,20 @@
     </header>
     <main>
         <!-- Hero Image Section -->
-        <section class="hero">
+        <div class="hero">
             <picture>
                 <!-- WebP image for desktop -->
-                <source srcset="images/lagos-large.webp" media="(min-width: 1000px)"">
+                <source srcset="images/lagos-large.webp" media="(min-width: 1000px)">
                 <!-- WebP image for mobile -->
-                <source srcset="images/lagos-medium.webp" media="(min-width: 500px)">
+                <img src="images/lagos-medium.webp" media="(min-width: 500px)">
                 <!-- Fallback image for browsers that do not support WebP -->
                 <img src="images/lagos-small.webp" alt="LAGOS" width="500" height="700">
             </picture>
-        </section>
+        </div>
 
 
                 <!-- Data Section -->
-        <section class="data">
+        <div class="data">
             <section class="data-head">
                 <h2>Data</h2> 
                 <!-- Data details -->
@@ -53,12 +55,13 @@
                     <p>Naira(₦)</p>
                     <p>UTC+01:00 (WAT)</p>
                     <p>+234</p>
-                    <p>ng</p>
-                </div>        
-        </section>
+                    <p> ng </p>
+                </div>
+            </div>
+        </div>
 
         <!-- Weather Section -->
-        <section class="weather">
+        <div class="weather">
             <section class="weather-head">
                 <h2>Weather</h2> 
                 <span><img src="images/weather-icon.svg" alt="Weather Icon"></span>
@@ -78,7 +81,7 @@
                     <p id="windchill"></p>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <!-- Footer Section -->
