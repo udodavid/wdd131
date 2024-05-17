@@ -13,6 +13,7 @@ body {
 /* Hero section styles */
 .hero img {
     width: 100%;
+    height: 700px;
     object-fit: cover;
 }
 
@@ -29,7 +30,7 @@ h1 {
 @media (max-width: 762px) {
     /* Data section styles */
     .hero img {
-        width: 100%;
+        width: 500px;
         height: 500px;
         object-fit: cover;
     }
