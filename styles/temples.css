@@ -76,7 +76,6 @@ nav a {
 
 .active::before { 
 	content: "📍";  /* just a wayfinding symbol for the user */
-	align-items: right;
 }
 
 h2 a{

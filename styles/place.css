@@ -90,6 +90,7 @@ h1 {
 
     .second {
         text-align: left;
+        margin-left: 5px;
     }
 }
 
@@ -133,7 +134,7 @@ footer {
     .weather {
         position: absolute;
         top: 80%;
-        right: 2%;
+        right:2%;
         transform: translate(-50%, -50%);
         background-color: rgba(255, 255, 255, 0.9); 
         color: white;
@@ -167,6 +168,7 @@ footer {
 
     .second {
         text-align: left;
+        margin-left: 5px;
     }
 
 }
