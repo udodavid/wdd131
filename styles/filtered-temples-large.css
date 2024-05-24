@@ -41,7 +41,7 @@
 }
 
 /*Larger View Css*/
-@media (min-width: 590px; max-width: 790;) {
+@media (min-width: 590px max-width: 790) {
     #menu {
 		display: none; /* hide hamburger button */
 	}
