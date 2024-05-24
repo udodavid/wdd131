@@ -30,7 +30,7 @@
     h2 {
         font-size: 2rem;
     }
-    main .temple-grid{
+    main .res-grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -43,7 +43,7 @@
         padding: 0;
     }
     
-    main .temple-grid img {
+    main .res-grid img {
         max-width: 400px;
         height: auto;
         
@@ -54,7 +54,7 @@
         max-width: 220px;
         margin-bottom: 8px;
     }
-    main .temple-grid{
+    main .res-grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
