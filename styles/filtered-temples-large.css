@@ -41,27 +41,7 @@
 }
 
 /*Larger View Css*/
-@media (min-width: 590px max-width: 790) {
-    #menu {
-		display: none; /* hide hamburger button */
-	}
-
-	.navigation {
-		flex-direction: row;
-        width: auto;
-	}
-    .navigation a {
-		display: block;
-	}
-
-    main {
-        max-width: 1200px;
-        justify-content: center;    
-    }
-    
-    h2 {
-        font-size: 2rem;
-    }
+@media (min-width: 590px) {
     main .temple-grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
