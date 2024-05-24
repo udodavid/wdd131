@@ -1,4 +1,35 @@
 /*Larger View Css*/
+@media (min-width: 590px) {
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+        width: auto;
+	}
+    .navigation a {
+		display: block;
+	}
+
+    main {
+        max-width: 1200px;
+        justify-content: center;    
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    main .temple-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px; 
+        justify-content: center;
+    }
+}
+
+/*Larger View Css*/
 @media (min-width: 900px) {
     #menu {
 		display: none; /* hide hamburger button */
@@ -26,37 +57,5 @@
         gap: 20px;
         padding: 20px; 
         justify-content: center;
-    }
-
-    main figure {
-        margin: 0;
-        padding: 0;
-    }
-    
-    main .temple-grid img {
-        max-width: 400px;
-        height: auto;
-        
-    }
-}
-
-/*Larger View Css*/
-@media (min-width: 590px) {
-    main .temple-grid{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 20px; 
-        justify-content: center;
-    }
-
-    main figure {
-        margin: 0;
-        padding: 0;
-    }
-    
-    main .temple-grid img {
-        max-width: 400px;
-        height: auto;       
     }
 }
