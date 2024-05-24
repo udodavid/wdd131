@@ -41,7 +41,7 @@
 }
 
 /*Larger View Css*/
-@media (min-width: 590px max-width: 790;) {
+@media (min-width: 590px; max-width: 790;) {
     #menu {
 		display: none; /* hide hamburger button */
 	}
@@ -77,21 +77,6 @@
     
     main .temple-grid img {
         max-width: 400px;
-        height: auto;
-        
+        height: auto;       
     }
 }
-/* @media (min-width:750px) {
-    .img{
-        max-width: 220px;
-        margin-bottom: 8px;
-    }
-    main .temple-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding: 20px; 
-        justify-content: center;
-    }
-} */
-
