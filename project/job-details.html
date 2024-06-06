@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Udogigs</title>'
+        <meta name="author" content="UDO DAVID">
+        <meta name="description" content="udogigs">
+        <link rel="stylesheet" href="styles/udogigs.css">
+        <script src="script/udogigs.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+<body>
+  <header>
+    <h1>MicroTaskHub - Job Details</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Jobs</button>
+        <div class="dropdown-content">
+          <a href="jobs.html">Jobs</a>
+          <a href="myjobs.html">My Jobs</a>
+          <a href="findjobs.html">Find Jobs</a>
+        </div>
+      </div>
+      <a href="profile.html">Profile</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="job-details"></div>
+    <form id="submit-proof-form">
+        <h3>Submit Proof of Completion</h3>
+        <label for="proof1">Proof 1 (screenshot, max 2MB):</label>
+        <input type="file" id="proof1" name="proof1" accept="image/*" required>
+        <label for="proof2">Proof 2 (screenshot, max 2MB):</label>
+        <input type="file" id="proof2" name="proof2" accept="image/*" required>
+        <label for="proof3">Proof 3 (text):</label>
+        <textarea id="proof3" name="proof3" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+  </main>
+
+  <footer>
+    <p>
+        &copy; <span id="currentyear"></span> Udogigs Nigeria
+    </p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>

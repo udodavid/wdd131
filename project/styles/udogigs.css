@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  nav .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  nav .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  nav .dropdown:hover .dropbtn {
+    background-color: #45a049;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  #home h2, p, button{
+    text-align: center;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  form input, form select, form button {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  section {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+form input, form button {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.job-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+#job-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.job {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.job:hover {
+  background-color: #f9f9f9;
+}
+
+.job h3 {
+  margin-top: 0;
+}
+
+.job p {
+  margin: 5px 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+  }
+  
+  form  {
+    margin-top: 2em;
+    border: 1px solid #ddd;
+    padding: 1em;
+    background-color: #f9f9f9;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  form input[type="text"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+  }
+  
+  form button {
+    padding: 0.5em 2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  #job-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #job-list {
+    grid-template-columns: 1fr;
+  }
+}

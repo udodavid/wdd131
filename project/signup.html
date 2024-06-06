@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udogigs</title>
+    <link rel="stylesheet" href="styles/udogigs.css">
+    <script src="script/udogigs.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>MicroTaskHub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="profile.html">Profile</a>
+      <a href="#about">About Us</a>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="home">
+      <h2>Welcome to MicroTaskHub</h2>
+      <p>Your hub for finding quick and flexible microjobs.</p>
+      <button onclick="showForm('signUpForm')">Sign Up</button>
+      <button onclick="showForm('loginForm')">Login</button>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We connect workers with clients for quick gigs and tasks.</p>
+    </section>
+
+    <!-- Sign-Up Form -->
+    <section id="signUpForm" style="display:none;">
+      <h2>Sign Up</h2>
+      <form onsubmit="signUp(event)">
+        <input type="text" id="signUpName" placeholder="Name" required>
+        <input type="email" id="signUpEmail" placeholder="Email" required>
+        <input type="password" id="signUpPassword" placeholder="Password" required>
+        <select id="signUpRole">
+          <option value="worker">Worker</option>
+          <option value="client">Client</option>
+        </select>
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
+    <!-- Login Form -->
+    <section id="loginForm" style="display:none;">
+      <h2>Login</h2>
+      <form onsubmit="login(event)">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MicroTaskHub</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

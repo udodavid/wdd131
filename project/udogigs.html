@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udogigs</title>'
+    <meta name="author" content="UDO DAVID">
+    <meta name="description" content="udogigs">
+    <link rel="stylesheet" href="styles/udogigs.css">
+    <script src="script/udogigs.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Udogigs</h1>
+    <button id="menu"></button>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Jobs</button>
+        <div class="dropdown-content">
+          <a href="myjobs.html">My Jobs</a>
+          <a href="jobs.html">Find Jobs</a>
+        </div>
+  </div>
+  <a href="profile.html">Profile</a>
+  <a href="about.html">About Us</a>
+</nav>
+  </header>
+  
+  <main>
+    <section id="home">
+      <h2>Welcome to Udogigs</h2>
+      <p>Your hub for finding quick and flexible microjobs.</p>
+      <button onclick="showForm('signUpForm')">Sign Up</button>
+      <button onclick="showForm('loginForm')">Login</button>
+    </section>
+
+    <section id="signUpForm" style="display:none;">
+      <h2>Sign Up</h2>
+      <form onsubmit="signUp(event)">
+        <input type="text" id="signUpName" placeholder="Name" required>
+        <input type="email" id="signUpEmail" placeholder="Email" required>
+        <input type="password" id="signUpPassword" placeholder="Password" required>
+        <select id="signUpRole">
+          <option value="worker">Worker</option>
+          <option value="client">Client</option>
+        </select>
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
+    <section id="loginForm" style="display:none;">
+      <h2>Login</h2>
+      <form onsubmit="login(event)">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+        &copy; <span id="currentyear"></span> Udogigs Nigeria
+    </p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>
