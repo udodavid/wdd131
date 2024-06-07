@@ -19,13 +19,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('reviewForm');
     form.addEventListener('submit', function(event) {
         event.preventDefault();
-        // Increment review counter in localStorage
         let reviewCount = localStorage.getItem('reviewCount') || 0;
         reviewCount++;
         localStorage.setItem('reviewCount', reviewCount);
-        // Redirect to review.html
         window.location.href = 'review.html';
     });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const reviewCount = localStorage.getItem('reviewCount') || 0;
+    document.getElementById('reviewCount').textContent = reviewCount;
 });
 
 // Get the current year and update the footer

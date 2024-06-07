@@ -2,23 +2,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
+    background-color: #f5f5f5;
 }
 
 h1 {
     text-align: center;
+    color: #333;
 }
 
 form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 label {
     display: block;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 input, select, textarea {
@@ -28,6 +33,11 @@ input, select, textarea {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
 }
 
 .rating {
@@ -44,6 +54,28 @@ input, select, textarea {
 .rating label {
     font-size: 30px;
     cursor: pointer;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+    margin-right: 5px;
+    background-color: black;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+}
+
+.rating input:checked ~ label,
+.rating input:hover ~ label,
+.rating input:hover ~ label ~ label {
+    color: black;
+    background-color: white;
+}
+
+.rating input:checked ~ label ~ label,
+.rating input:hover ~ label,
+.rating input:hover ~ label ~ label {
+    color: black;
+    background-color: white;
 }
 
 .features input {
@@ -55,7 +87,24 @@ input, select, textarea {
     margin-right: 10px;
 }
 
+input[type="submit"] {
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
 footer {
     text-align: center;
     margin-top: 20px;
+    color: #777;
 }
