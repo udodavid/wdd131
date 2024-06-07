@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temple Album</title>
+        <meta name="author" content="UDO DAVID">
+        <meta name="description" content="FORM | WDD131">
+        <link rel="stylesheet" href="styles/form.css">
+        <script src="scripts/form.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <h1>Product Review Form</h1>
+    <form id="reviewForm" action="review.html" method="get">
+        <!-- Product Name -->
+        <label for="productName">Product Name</label>
+        <select id="productName" name="productName" required>
+            <option value="" disabled selected>Select a Product ...</option>
+        </select>
+        
+        <!-- Overall Rating -->
+        <label>Overall Rating</label>
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5" required><label for="star5">★</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+        </div>
+        
+        <!-- Date of Installation -->
+        <label for="installationDate">Date of Installation</label>
+        <input type="date" id="installationDate" name="installationDate" required>
+        
+        <!-- Useful Features -->
+        <label>Useful Features</label>
+        <div class="features">
+            <input type="checkbox" id="feature1" name="features" value="Feature 1"><label for="feature1">Feature 1</label>
+            <input type="checkbox" id="feature2" name="features" value="Feature 2"><label for="feature2">Feature 2</label>
+            <input type="checkbox" id="feature3" name="features" value="Feature 3"><label for="feature3">Feature 3</label>
+        </div>
+        
+        <!-- Written Review -->
+        <label for="review">Written Review</label>
+        <textarea id="review" name="review"></textarea>
+        
+        <!-- User Name -->
+        <label for="userName">User Name</label>
+        <input type="text" id="userName" name="userName">
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Review">
+    </form>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Udo David Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

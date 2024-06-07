@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.features input {
+    display: inline-block;
+}
+
+.features label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
