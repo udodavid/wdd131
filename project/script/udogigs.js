@@ -80,8 +80,8 @@ function redirectToJobsPage() {
         </div>
       `).join('');
     }
-  
-    if (document.getElementById('profile-details')) {
+    
+    (document.getElementById('profile-details')) {
       const user = JSON.parse(localStorage.getItem('user'));
       if (user) {
         document.getElementById('profile-details').innerHTML = `
@@ -92,7 +92,7 @@ function redirectToJobsPage() {
           <p>Rating: ${user.rating}</p>
         `;
       } else {
-        window.location.href = 'index.html';
+        window.location.href = 'udogigs.html';
       }
     }
   });
@@ -101,7 +101,7 @@ function redirectToJobsPage() {
     const user = JSON.parse(localStorage.getItem('user'));
     if (!user) {
       alert('You need to login first');
-      window.location.href = 'index.html';
+      window.location.href = 'udogigs.html';
       return;
     }
   

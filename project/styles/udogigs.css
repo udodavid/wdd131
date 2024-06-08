@@ -202,6 +202,18 @@ h1, h2, h3 {
     background-color: #555;
   }
 
+  #profile {
+    border: 1px solid #ddd;
+    padding: 1em;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #profile-details p {
+    margin: 0.5em 0;
+  }
+
 /* Responsive adjustments */
 @media (max-width: 900px) {
   #job-list {
