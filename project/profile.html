@@ -12,11 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <h1>MicroTaskHub</h1>
     <nav>
-      <a href="udogigs.html">Home</a>
+      <a href="index.html">Home</a>
       <div class="dropdown">
         <button class="dropbtn">Jobs</button>
         <div class="dropdown-content">
@@ -41,13 +42,16 @@
       <button onclick="uploadPhoto()">Upload a new photo</button>
 
       <h3>Name</h3>
-      <p>First Name: <span id="firstName"></span></p>
-      <p>Last Name: <span id="lastName"></span></p>
-      <p>Preferred Name: <span id="preferredName"></span></p>
+      <form id="update-name-form" onsubmit="updateName(event)">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br>
+        <button type="submit">Update name</button>
+      </form>
 
       <h3>Email and Password</h3>
       <p>Email address: <span id="email-address"></span></p>
-      <p>Password: ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••</p>
       <form id="update-email-form" onsubmit="updateEmail(event)">
         <label for="newEmail">New Email:</label>
         <input type="email" id="newEmail" required><br>

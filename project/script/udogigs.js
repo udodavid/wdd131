@@ -80,8 +80,8 @@ function redirectToJobsPage() {
         </div>
       `).join('');
     }
-    
-    (document.getElementById('profile-details')) {
+  
+    if (document.getElementById('profile-details')) {
       const user = JSON.parse(localStorage.getItem('user'));
       if (user) {
         document.getElementById('profile-details').innerHTML = `
